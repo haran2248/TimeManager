@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseBtn"
+        android:text="EVENTNAME Time"
+        android:elevation="5dp"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:background="#E30910"
+        android:textColor="#FFFFFF"
+        android:padding="30dp"/>
+</LinearLayout>

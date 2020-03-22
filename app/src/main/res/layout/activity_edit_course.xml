@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditCourse"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:id="@+id/Description"
+        android:hint="DESCRIPTION"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/stopbutton"
+            android:layout_width="130dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="36dp"
+
+            android:background="#FA0216"
+            android:text="Set Stop time"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="224dp" />
+
+        <Button
+            android:id="@+id/startbutton"
+            android:layout_width="132dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FA0216"
+            android:text="Set Start time"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stopbutton"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATEGORY OF TIME SPENT"
+        android:textColor="#F6D606"
+        android:gravity="center"
+        android:padding="20dp"
+        ></TextView>
+
+
+
+    <RadioButton
+        android:id="@+id/prod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Productive"
+        android:textColor="#3CDA03"
+        />
+
+    <RadioButton
+        android:id="@+id/unpro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unproductive"
+        android:textColor="#FB030B"
+        />
+
+    <RadioButton
+        android:id="@+id/Relaxation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relaxation"
+        android:textColor="@color/colorAccent"/>
+
+    <RadioButton
+        android:id="@+id/Other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:textColor="#673AB7"
+
+        />
+
+    <TextView
+        android:id="@+id/startview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Start time" />
+
+    <TextView
+        android:id="@+id/endView"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="End time" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#F60505"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="DONE" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#FCFFFF"
+            android:background="#ED041F"
+            tools:layout_editor_absoluteX="223dp"
+            tools:layout_editor_absoluteY="25dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
